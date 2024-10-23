@@ -390,6 +390,7 @@ header {
 
 /* examples section */
 
+
 .examples-section {
   display: flex;
   justify-content: flex-start;
@@ -448,6 +449,8 @@ header {
   color: var(--secondary-text-color);
 }
 
+
+
 /* cta section */
 
 .cta-section-container {
@@ -459,7 +462,9 @@ header {
 
 .cta-section {
   padding: 120px var(--padding-inline-section) 80px;
-  background-color: #183b54;
+  background-color:rgb(216, 220, 247);
+  border-radius: 2px;
+  border-style:double;
 }
 
 .cta-section-container p {
@@ -791,4 +796,31 @@ body.sign-body {
 #signUp{
   text-align: center;
   font-size: small;
+}
+.examples-card {
+  width: 23%;
+  min-width: 200px; /* Ensures the card doesn't get too narrow */
+  position: relative;
+  height: 300px;
+  background: var(--secondary-text-color);
+  background :linear-gradient(rgba(180, 175, 175, 0.3), rgba(220, 162, 162, 0.8)),
+    url(asset\ 35.jpeg);
+  background-size: cover;
+  transition: 0.2s ease-out;
+  word-wrap: break-word; /* Ensures long words break */
+  overflow-wrap: break-word; /* Ensures proper text wrapping */
+  text-align: center; /* Centers the text */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: var(--secondary-text-color);
+  font-size: 16px; /* Reduced font size for better fit */
+}
+.examples-section .secondary-button{
+  margin-right: 30px;
+  background-color: #d5e8fc;
 }
